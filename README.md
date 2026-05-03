@@ -2,8 +2,6 @@
 
 HelpMateAI is a Retrieval-Augmented Generation (RAG) system that answers questions from a long life insurance policy document. It combines PDF parsing, page-level chunking, OpenAI embeddings, ChromaDB vector search, semantic caching, CrossEncoder reranking, and GPT-based answer generation with source citations.
 
-The project is based on the Mr. HelpMate AI assignment brief in `index.ipynb` and the implementation/report in `HelpMateAI.ipynb` and `Helpmate AI V1.0 Ujwal Abhishek.pdf`.
-
 ## Objective
 
 The goal is to build a robust generative search system that can accurately answer user questions from a group life insurance policy. The system implements the three core RAG layers:
@@ -34,7 +32,6 @@ The pipeline follows this flow:
 ```text
 .
 ├── HelpMateAI.ipynb                         # Main implementation notebook
-├── index.ipynb                              # Assignment brief and evaluation rubric
 ├── Helpmate AI V1.0 Ujwal Abhishek.pdf      # Project report
 ├── data/raw/
 │   └── Principal-Sample-Life-Insurance-Policy.pdf
@@ -202,19 +199,6 @@ Run the notebook cells in order:
 7. Run semantic search with cache.
 8. Rerank results with the CrossEncoder.
 9. Generate the final cited answer.
-
-## Evaluation Criteria
-
-The assignment rubric in `index.ipynb` evaluates the system across:
-
-| Area | Weight | Focus |
-| --- | ---: | --- |
-| Overall system design | 10% | Architecture, workflow, and implementation quality |
-| Embedding layer | 25% | PDF processing, chunking strategy, embedding model usage |
-| Search layer | 30% | Retrieval quality, cache implementation, reranking |
-| Generative layer | 10% | Prompt quality and final answers |
-| Query search | 10% | Testing with at least three user-designed queries |
-| Documentation | 15% | Goals, data sources, design choices, and challenges |
 
 ## Challenges and Learnings
 
